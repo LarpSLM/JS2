@@ -1,0 +1,80 @@
+$colorOne: rgba(32, 32, 32, 0.9);
+$fontOne: 'Russo One', sans-serif;
+$colorThree: #ff6300;
+$colorTwo: #ffffff;
+
+$sizeOne: 1.3em;
+
+body {
+  background: url("../img/background.jpg") center fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  background: rgba(32, 32, 32, 0.7);
+}
+
+header {
+  background: $colorOne;
+  height: 75px;
+  text-align: right;
+
+  .cart-button {
+    height: 45px;
+    width: 150px;
+    background: none;
+    border: 1px solid $colorTwo;
+    margin: 15px;
+    font-family: $fontOne;
+    color: $colorThree;
+    font-size: $sizeOne;
+    font-style: italic;
+  }
+}
+
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+
+.goods-item {
+  width: 25%;
+  height: 300px;
+  background: $colorOne;
+  margin: 20px;
+
+  .item_img {
+    height: 200px;
+    width: 100%;
+    background: url("../img/rom.jpg") right;
+    background-size: cover;
+    opacity: 0.8;
+  }
+
+  h3 {
+    font-family: $fontOne;
+    color: $colorThree;
+    text-align: center;
+    font-size: $sizeOne;
+    margin: 1vw 0;
+  }
+
+  p {
+    font-family: $fontOne;
+    color: $colorTwo;
+    font-style: italic;
+    font-size: $sizeOne;
+    padding: 0 20px;
+    text-align: right;
+    margin: 0;
+  }
+}
+
+.goods-item:hover {
+  background: rgba(74, 74, 74, 0.9);
+}
